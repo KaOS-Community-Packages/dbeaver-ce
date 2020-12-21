@@ -12,6 +12,7 @@ md5sums=('d395c01267a531bedf9816cf8715ed25')
 
 package() {
     cd "${srcdir}"
+    rm -rf jre
     install -dm755 "${pkgdir}/usr/share/applications"
     install -dm755 "${pkgdir}/usr/bin"
     cp --preserve=mode -r "dbeaver" "${pkgdir}/usr/share/dbeaver"
