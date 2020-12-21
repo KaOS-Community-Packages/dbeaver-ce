@@ -1,7 +1,7 @@
 pkgname=dbeaver-ce
 _pkgname=dbeaver
 pkgver=7.3.1
-pkgrel=1
+pkgrel=2
 pkgdesc="Free Universal Database Tool"
 arch=('x86_64')
 depends=('openjdk')
@@ -12,7 +12,7 @@ md5sums=('d395c01267a531bedf9816cf8715ed25')
 
 package() {
     cd "${srcdir}"
-    rm -rf jre
+    rm -rf dbeaver/jre
     install -dm755 "${pkgdir}/usr/share/applications"
     install -dm755 "${pkgdir}/usr/bin"
     cp --preserve=mode -r "dbeaver" "${pkgdir}/usr/share/dbeaver"
