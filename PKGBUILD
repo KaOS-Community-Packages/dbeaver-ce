@@ -1,5 +1,5 @@
 pkgname=dbeaver-ce
-pkgver=22.1.5
+pkgver=22.2.0
 pkgrel=1
 pkgdesc="Free Universal Database Tool"
 arch=('x86_64')
@@ -7,7 +7,7 @@ depends=('openjdk')
 url="https://dbeaver.io/"
 license=('Apache')
 source=("https://github.com/dbeaver/dbeaver/releases/download/${pkgver}/${pkgname}-${pkgver}-linux.gtk.x86_64.tar.gz")
-md5sums=('9ec0d3908001cd4f216c346acecaa98f')
+md5sums=('0e173db2b10b5d8cc3dd08bd15ab9bf3')
 
 package() {
     cd "${srcdir}"
