@@ -7,7 +7,7 @@ depends=('openjdk')
 url="https://dbeaver.io/"
 license=('Apache')
 source=("https://github.com/dbeaver/dbeaver/releases/download/${pkgver}/${pkgname}-${pkgver}-linux.gtk.x86_64.tar.gz")
-md5sums=('521abefe5519a1b46afff72239b49520')
+md5sums=('9bae6238c2f85c3a585f4acb25626547')
 
 package() {
     cd "${srcdir}"
